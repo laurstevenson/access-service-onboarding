@@ -15,42 +15,26 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
     />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script>
+      $(function() {
+        $("#navigation").load("navbar.html");
+      });
+    </script>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <!-- nav -->
-    <header>
-<nav class="navbar navbar-light navbar-expand-lg fixed-top justify-content-center">
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="index.html">Welcome</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="definitions.html">Definitions</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="accoomm.html">Mandate</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="roles.html">Roles & Responsibilities</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="accom-plans.html">Accommodation Plans</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="registration.html">Registration</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="resources.html">Campus Resources</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="conclusion.html">Conclusion</a>
-  </li>
-</ul>
-</nav>
+    
+ <!--     nav bar -->
+ <header>
+      <div id="navigation"></div>
     </header>
+<!--     nav bar -->
 
     <div class="container">
       <h1>
@@ -123,10 +107,16 @@
           access your profile on the go using either a smartphone or tablet
         </li>
       </ul>
-      <h4>
-        Where can I find Ventus?
-      </h4>
-      <p>
+     
+      
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">Where can I find Ventus?</a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <p>
         Ventus is found in several places on the uOttawa website:<br />
         1) Through the uOzone application: Login to your uOzone account and you
         will find Ventus in the "Applications" tab.<br />or<br />
@@ -135,11 +125,19 @@
         Please note: you will have to login using your uOttawa username and
         password.
       </p>
-
-      <h4>
-        Who has access to Ventus?
-      </h4>
-      <p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+         <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseTwo">Who has access to Ventus?</a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+               <p>
         All documentation added to Ventus is confidential. Only Academic
         Accommodations staff have access to this information. After submitting
         the information, our reception is automatically notified and we will
@@ -151,6 +149,11 @@
         Accommodations. Therefore, faculty will have access to your name and
         accommodations only.
       </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <h3>
         Complete the Intake form
@@ -177,18 +180,26 @@
         Your answers will give your learning specialist insight about your
         challenges and supports for your academic journey.
       </p>
-
-      <h4>
-        Where do I find the Intake form?
-      </h4>
-
-      <p>
+      
+      
+        <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseThree">Where do I find the Intake form?</a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+            <p>
         The intake form is available when you first open your Ventus account.<br />
         <br />
         Ensure that you have some time to spare to complete the questionnaire
         when you open your account. Once you hit submit, or if you skip this
         step, you will no longer be able to access the intake form.
       </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h4>
         Do my answers influence my accommodation plan?

@@ -13,43 +13,26 @@
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script>
+      $(function() {
+        $("#navigation").load("navbar.html");
+      });
+    </script>
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
-    <!-- nav -->
-    <header>
-<nav class="navbar navbar-light navbar-expand-lg fixed-top justify-content-center">
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="index.html">Welcome</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="definitions.html">Definitions</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="accoomm.html">Mandate</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="roles.html">Roles & Responsibilities</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="accom-plans.html">Accommodation Plans</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="registration.html">Registration</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="resources.html">Campus Resources</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="conclusion.html">Conclusion</a>
-  </li>
-</ul>
-</nav>
+  <!--     nav bar -->
+ <header>
+      <div id="navigation"></div>
     </header>
+<!--     nav bar -->
 
     <div class="container">
       
@@ -62,11 +45,18 @@
     <h1>
       Roles and responsibilities
     </h1>
-
-    <h3>
-      Learning Specialist Role
-    </h3>
-    <p>
+      
+      <div class="container">
+        
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">Learning Specialist role</a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+                
+           <p>
       The role and responsibilities of your
       <strong>learning specialist:</strong>
     </p>
@@ -99,13 +89,19 @@
         resources.
       </li>
     </ul>
-
-    <h3>
-      Professor role
-    </h3>
-
-    <p>The role and responsibilities of your <strong>professor:</strong></p>
-    <ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseTwo">Professor role</a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <p>
+                The role and responsibilities of your <span style="color:#540303"><strong>professor:</strong></span>
+              </p>
+                <ul>
       <li>
         Working collaboratively with Academic Accommodations and you to
         implement the approved accommodation plan. This may include providing
@@ -117,13 +113,19 @@
         and maintain essential program requirements and skills.
       </li>
     </ul>
-
-    <h3>
-      Student role
-    </h3>
-
-    <p>Your <strong>student</strong> role and respomsibilities:</p>
-    <ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseThree">Student role</a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <p>
+                Your <span style="color:#540303"><strong>student</strong></span> role and responsibilities:
+              </p>
+               <ul>
       <li>
         Adhering to the academic standards established by the University of
         Ottawa.
@@ -142,6 +144,14 @@
         skills based on challenges and strengths
       </li>
     </ul>
+            </div>
+          </div>
+        </div>
+      </div>   
+</div>
+
+
+   
 
     <img class="resize-w100"
       src="https://cdn.glitch.com/6075f6ad-b36f-4e48-a783-6298962d4ade%2FMy%20Post-6.jpg?v=1603895089064"
