@@ -1,3 +1,6 @@
+Webpage designed to facilitate student onboarding and set expectations for accommodation process at the post-secondary level (UO's DSO).
+
+
 Welcome to Glitch
 =================
 
