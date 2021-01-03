@@ -56,5 +56,21 @@ p {
   margin-top: 1.5em;
 }
 
+.btn-styling {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #000;
+  border-color: #000;
+}
 
+.btn-styling:hover {
+  background-color: #540303;
+  color: #fff;
+}
+
+.quiz-font {
+  font-family: 'KorinnaStd-Bold', 'Georgia', Times, serif;
+  color: #000;
+  font-weight: bold;
+}
 
